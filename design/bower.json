@@ -1,0 +1,21 @@
+{
+  "name": "Sam's Blog",
+  "version": "0.0.1",
+  "homepage": "https://github.com/SamHwang1990/SamHwang1990.github.io",
+  "authors": [
+    "SamHwang1990 <samhwang1990@gmail.com>"
+  ],
+  "description": "the prototye of blog",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "blog"
+  ],
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "lodash": "~2.4.1"
+  }
+}
