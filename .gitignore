@@ -1,7 +1,4 @@
 _site
 .idea/
-*
-*/
-!design/
 design/bower_components/
 
