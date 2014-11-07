@@ -3,53 +3,53 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   padding: 0;
   border: 0;
   font-size: 100%;
-  vertical-align: baseline; }
-
+  vertical-align: baseline;
+}
 body {
-  line-height: 1; }
-
+  line-height: 1;
+}
 ol,
 ul {
-  list-style: none; }
-
+  list-style: none;
+}
 blockquote,
 q {
-  quotes: none; }
-
+  quotes: none;
+}
 blockquote:before,
 blockquote:after,
 q:before,
 q:after {
   content: '';
-  content: none; }
-
+  content: none;
+}
 table {
   border-collapse: collapse;
-  border-spacing: 0; }
-
+  border-spacing: 0;
+}
 caption,
 th,
 td {
   font-weight: normal;
-  text-align: left; }
-
+  text-align: left;
+}
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  clear: both; }
-
+  clear: both;
+}
 html {
   overflow-y: scroll;
   font-size: 100%;
   -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%; }
-
+  -ms-text-size-adjust: 100%;
+}
 a:focus {
-  outline: thin dotted; }
-
+  outline: thin dotted;
+}
 article,
 aside,
 details,
@@ -60,56 +60,57 @@ header,
 hgroup,
 nav,
 section {
-  display: block; }
-
+  display: block;
+}
 audio,
 canvas,
 video {
-  display: inline-block; }
-
+  display: inline-block;
+}
 audio:not([controls]) {
-  display: none; }
-
+  display: none;
+}
 del {
-  color: #333; }
-
+  color: #333;
+}
 ins {
   background: #fff9c0;
-  text-decoration: none; }
-
+  text-decoration: none;
+}
 hr {
   background-color: #ccc;
   border: 0;
   height: 1px;
   margin: 24px;
-  margin-bottom: 1.714285714rem; }
-
+  margin-bottom: 1.714285714rem;
+}
 sub,
 sup {
   font-size: 75%;
   line-height: 0;
   position: relative;
-  vertical-align: baseline; }
-
+  vertical-align: baseline;
+}
 sup {
-  top: -0.5em; }
-
+  top: -0.5em;
+}
 sub {
-  bottom: -0.25em; }
-
+  bottom: -0.25em;
+}
 small {
-  font-size: smaller; }
-
+  font-size: smaller;
+}
 img {
   border: 0;
-  -ms-interpolation-mode: bicubic; }
+  -ms-interpolation-mode: bicubic;
+}
 
 /* Clearing floats */
 .clear:after,
 .wrapper:after,
 .format-status .entry-header:after {
-  clear: both; }
-
+  clear: both;
+}
 .clear:before,
 .clear:after,
 .wrapper:before,
@@ -117,11 +118,5 @@ img {
 .format-status .entry-header:before,
 .format-status .entry-header:after {
   display: table;
-  content: ""; }
-
-body {
-  font: 100% Helvetica, sans-serif;
-  background-color: #efefef;
-  font-size: 14px; }
-
-/*# sourceMappingURL=frame.css.map */
+  content: "";
+}

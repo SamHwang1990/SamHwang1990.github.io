@@ -119,9 +119,4 @@ img {
   display: table;
   content: ""; }
 
-body {
-  font: 100% Helvetica, sans-serif;
-  background-color: #efefef;
-  font-size: 14px; }
-
-/*# sourceMappingURL=frame.css.map */
+/*# sourceMappingURL=_reset.css.map */

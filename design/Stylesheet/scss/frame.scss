@@ -1,7 +1,89 @@
 @import '_base';
+@import "_variables";
+
+html{
+  font-size:125%; // 20px % 16px, tht minimum font-size is 12px in browser
+}
 
 body {
-  font: 100% Helvetica, sans-serif;
-  background-color: #efefef;
+  font-family: Helvetica, Arial, sans-serif;
+  text-rendering: optimizeLegibility;
+  color: #444;
   font-size: 14px;
+  font-size: 0.7rem;
+
+  &.custom-background{
+    background-color: #f1f1f1;
+  }
+}
+
+.site{
+  padding: 0 24px;
+  padding:0 1.2rem;
+
+  body &{
+    margin-bottom: 0;
+  }
+
+  @media #{$media} and (min-width: $sm) {
+    margin:0 auto;
+    max-width: 960px;
+    max-width: 48rem;
+    overflow: hidden;
+  }
+
+  @media #{$media} and (min-width: $md) {
+    padding: 0 40px;
+    padding: 0 2rem;
+  }
+
+  @media #{$media} and (min-width: $lg) {
+    max-width: 1200px;
+    max-width: 60rem;
+  }
+}
+
+.site-header{
+  padding:24px 0;
+  padding:1.2rem 0;
+}
+
+.site-content{
+  margin: 24px 0 0;
+  margin:1.2rem 0 0;
+
+  @media #{$media} and (min-width: $sm) {
+    float: left;
+    width:65.104166667%;
+  }
+}
+
+.widget-area{
+  @extend .site-content;
+
+  @media #{$media} and (min-width: $sm) {
+    float: right;
+    width:26.041666667%;
+  }
+
+  .widget{
+    margin-bottom: 48px;
+    margin-bottom: 2.4rem;
+    word-wrap: break-word;
+  }
+}
+
+footer[role='contentinfo']{
+  clear: both;
+  max-width: 960px;
+  max-width: 48rem;
+  margin-top:24px;
+  margin-top:1.2rem;
+  margin-left:auto;
+  margin-right:auto;
+  padding: 10px 0;
+  padding:.5rem 0;
+  font-size: 12px;
+  font-size:.6rem;
+  line-height: 2;
 }

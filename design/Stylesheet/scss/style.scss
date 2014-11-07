@@ -1,0 +1,21 @@
+@import "frame";
+
+//site-header region
+.site-header{
+  h1,h2{
+    text-align: center;
+  }
+  h1{
+    font-size: 24px;
+    font-size: 1.2rem;
+    line-height: 1.285714286;
+    margin-bottom: 14px;
+    margin-bottom: .4rem;
+  }
+}
+
+.main-navigation{
+  margin-top: 24px;
+  margin-top: 1.2rem;
+  text-align: center;
+}
