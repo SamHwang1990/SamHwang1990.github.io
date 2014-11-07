@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "",
-"sources": [],
+"mappings": "AAAA,EAAE;EACA,MAAM,EAAC,CAAC;;ACCV,IAAK;EACH,IAAI,EAAE,0BAA0B;EAChC,gBAAgB,EAAE,OAAO;EACzB,SAAS,EAAE,IAAI",
+"sources": ["_base.scss","frame.scss"],
 "names": [],
 "file": "frame.css"
 }
