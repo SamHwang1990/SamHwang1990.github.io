@@ -2,4 +2,4 @@ _site
 .idea/
 design/bower_components/
 node_modules/
-
+design/.sass-cache/

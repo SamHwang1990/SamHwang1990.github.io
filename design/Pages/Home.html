@@ -10,27 +10,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
-    <title>Sam 哥 | 世界好简单，人类好复杂</title>
+    <title>阿Sam | 世界好简单，人类好复杂</title>
     <!--[if lt IE 9]>
     <script src="../bower_components/html5shiv/dist/html5shiv.js" type="text/javascript"></script>
     <![endif]-->
-    <link href="../Stylesheet/scss/style.css" rel="stylesheet" type="text/css" media="all">
+    <link href="../Stylesheet/css/style.css" rel="stylesheet" type="text/css" media="all">
 </head>
 <body class="custom-background">
 
 <div id="page" class="site">
     <header id="masthead" class="site-header">
-        <h1 class="site-title">Sam 哥</h1>
+        <h1 class="site-title">
+            <a href="/">阿Sam</a>
+        </h1>
         <div class="fn_search" id="search-container">
             <!--TODO:暂时为空-->
         </div>
         <nav id="site-navigation" class="main-navigation" role="navigation">
-            <h3 class="menu-toggle">Menu</h3>
+            <h3 class="menu-toggle toggle-on">Menu</h3>
             <div class="nav-menu">
-                <ul>
-                    <li><a href="/" title="">Home</a></li>
-                    <li><a href="/" title="">Oil</a></li>
-                    <li><a href="/" title="">Readme</a></li>
+                <ul class="nav-menu">
+                    <li class="page-item"><a href="/" title="">Home</a></li>
+                    <li class="page-item"><a href="/" title="">Oil</a></li>
+                    <li class="current-page-item"><a href="/" title="">Readme</a></li>
                 </ul>
             </div>
         </nav>
@@ -49,10 +51,10 @@
         </div>
         <div id="secondary" class="widget-area">
             <aside id="text-star" class="widget widget-star">
-                <div><a href="/">【招聘】微信微信 - 前端开发工程师</a></div>
+                <div class="textWidget"><a href="/">【招聘】微信微信 - 前端开发工程师</a></div>
             </aside>
             <aside id="recent-posts" class="widget widget-recent-posts">
-                <h3>Recent Posts</h3>
+                <h3 class="widget-title">Recent Posts</h3>
                 <ul>
                     <li><a href="/">1. 这是第一篇</a></li>
                     <li><a href="/">2. 我是第二篇啊擦</a></li>
@@ -64,7 +66,7 @@
                 </ul>
             </aside>
             <aside id="categories" class="widget widget-categories">
-                <h3>Categories</h3>
+                <h3 class="widget-title">Categories</h3>
                 <ul>
                     <li><a href="/">aha</a></li>
                     <li><a href="/">bibi</a></li>
@@ -76,7 +78,7 @@
                 </ul>
             </aside>
             <aside id="tag-cloud" class="widget widget-tag-cloud">
-                <h3>Tags</h3>
+                <h3 class="widget-title">Tags</h3>
                 <div class="tag-cloud">
                     <a href="/">aha</a>
                     <a href="/">bibi</a>
