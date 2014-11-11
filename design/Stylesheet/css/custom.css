@@ -249,6 +249,21 @@ a:hover {
   box-shadow: rgba(255, 255, 255, 0.5) 0 1px 0;
   word-wrap: break-word;
 }
+.site-content nav.page-navigation {
+  position: relative;
+  overflow: hidden;
+  clear: both;
+}
+
+.nav-previous {
+  float: left;
+  text-align: left;
+}
+
+.nav-next {
+  float: right;
+  text-align: right;
+}
 
 .archive-meta {
   color: #757575;
