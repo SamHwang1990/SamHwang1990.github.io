@@ -1,0 +1,16 @@
+---
+layout: default
+title: Blogging Like a Hacker
+---
+<div id="temp"></div>
+        <script type="text/javascript">
+            var dataStr = '{ {% for tag in site.tags %}{% if tag[0] != site.tags.first[0] %},{% endif %}"{{ tag[0] }}":[{% for post in tag[1] %}{% if post != tag[1].first %},{% endif %}{"url":"{{post.url}}", "title":"{{post.title}}", "date":"{{post.date | date:"%d/%m/%Y"}}"}{% endfor %}]{% endfor %} }',
+                    data = JSON.parse(dataStr);
+                    /*curTag = $.query.get("tag"),
+             archieves = data[curTag];*/
+            var curTag = location.search.slice(1);
+            var archieves = data[curTag];
+            var eTemp = document.getElementById('temp');
+            eTemp.innerHTML = archieves;
+            console.log(archieves);
+        </script>

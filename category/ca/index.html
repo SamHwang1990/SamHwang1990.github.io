@@ -1,0 +1,10 @@
+---
+layout: default
+title: Blogging Like a Hacker
+CATEGORY: ca
+---
+
+{% for post in site.categories.[page.CATEGORY] %}
+<p>{{ post.date }}&nbsp;{{ post.title }}</p>
+{% endfor %}
+

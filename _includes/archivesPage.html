@@ -1,0 +1,13 @@
+<nav id="nav-page" class="page-navigation" role="navigation">
+
+    {% if paginator.previous_page %}
+    <div class="nav-previous">
+        <a href="{{ paginator.previous_page_path }}">←&nbsp;Older Posts</a>
+    </div>
+    {% endif %}
+    {% if paginator.next_page %}
+    <div class="nav-next">
+        <a href="{{ paginator.next_page_path }}">Newer Posts&nbsp;→</a>
+    </div>
+    {% endif %}
+</nav>

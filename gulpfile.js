@@ -15,8 +15,7 @@ gulp.task('compass', function() {
             css: 'Stylesheet/css',
             sass: 'Stylesheet/scss',
             image: 'Image'
-        }))
-        .pipe(gulp.dest('./design/Stylesheet/css'));
+        }));
 });
 
 // 默认任务
