@@ -29,9 +29,7 @@ currentNav: Home
         {% endfor %}
         on
         <time class="entry-date">{{ post.date | date_to_long_string }}</time>
-        <span class="by-author">
-            by {{site.author.name}}
-        </span>
+        <span class="by-author">by {{site.author.name}}</span>
     </footer>
 </article>
 {% endfor %}
