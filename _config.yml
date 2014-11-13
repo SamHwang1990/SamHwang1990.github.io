@@ -1,6 +1,9 @@
 # Where things are
 paginate:     10
 
+# Handling Reading
+exclude: ["_posts/sample","category/sample"]
+
 # Filtering Content
 show_drafts:  null
 limit_posts:  0
