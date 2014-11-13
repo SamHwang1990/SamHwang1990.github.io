@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!--[if IE 7]>
+<html class="ie ie7" lang="en-US">
+<![endif]-->
+<!--[if IE 8]>
+<html class="ie ie8" lang="en-US">
+<![endif]-->
+<!--[if !(IE 7) | !(IE 8)  ]><!-->
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="{{page.description}}">
+    <meta name="description" content="{{site.description}}">
+    <title>{% if page.title %}{{page.title}} | {% endif %}{{site.title}} | {{site.subTitle}}</title>
+    <!--[if lt IE 9]>
+    <script src="{{site.url}}/assert/bower_components/html5shiv/dist/html5shiv.js" type="text/javascript"></script>
+    <![endif]-->
+    <link href="{{site.url}}/css/style.css" rel="stylesheet" type="text/css" media="all">
+</head>
+<body class="custom-background">
+
+<div id="page" class="site">
+    <header id="masthead" class="site-header">
+        <h1 class="site-title">
+            <a href="{{site.url}}">阿Sam</a>
+        </h1>
+        <!--<div class="fn_search" id="search-container">
+            &lt;!&ndash;TODO:暂时为空&ndash;&gt;
+        </div>-->
+        {% include siteNav.html %}
+    </header>
+    <div id="main" class="wrapper">
+        <div id="primary" class="site-content">
+            <div id="content" role="main">
+                {{content}}
+            </div>
+        </div>
+        {% include widgetArea.html %}
+    </div>
+    {% include footer.html %}
+</div>
+<script type="text/javascript" src="{{site.url}}/js/navigation.js"></script>
+</body>
+</html>

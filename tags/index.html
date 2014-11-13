@@ -1,0 +1,42 @@
+---
+layout: default
+title: Tag Archives
+---
+<div id="temp">数据正在加载中～～～喝杯东西先！</div>
+<script type="text/javascript" src="{{site.url}}/assert/bower_components/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript">
+    $(function(){
+        /* TODO: Can't render post.excerpt */
+        var dataStr = '{ {% for tag in site.tags %}' +
+                            '{% if tag[0] != site.tags.first[0] %},{% endif %}' +
+                            '"{{ tag[0] }}":[{% for post in tag[1] %}' +
+                                '{% if post != tag[1].first %},{% endif %}' +
+                                '{' +
+                                    '"url":"{{post.url}}", ' +
+                                    '"title":"{{post.title}}", ' +
+                                    '"date":"{{post.date | date_to_long_string }}", ' +
+                                    '"tags":"{{post.tags}}", ' +
+                                    '"category":"{{post.category}}"' +
+                                '}' +
+                            '{% endfor %}]' +
+                        '{% endfor %} }';
+        var data = JSON.parse(dataStr);
+        var curTag = location.search.slice(1);
+        var archives = data[curTag];
+
+        var posts = '';
+        $.each(archives,function(index,post){
+            posts +='<article>' +
+                        '<header class="entry-header">' +
+                            '<h1 class="entry-title"><a href="'+ post.url + '">'+ post.title + '</a></h1> ' +
+                        '</header> ' +
+                        '<footer class="entry-meta">This entry was posted in' +
+                                '<a href="{{site.url}}/category/' + post.category + '" title="View all posts in ' + post.category + '" rel="category">' + post.category + '</a>' +
+                                '<time class="entry-date">' + post.date + '</time>' +
+                                '<span class="by-author">by {{site.author.name}}</span>' +
+                        '</footer> ' +
+                    '</article>';
+        });
+        $('#content').html(posts);
+    })
+</script>

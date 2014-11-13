@@ -1,0 +1,29 @@
+<div id="secondary" class="widget-area">
+    <aside id="text-star" class="widget widget-star">
+        <!--<div class="textWidget"><a href="/">【招聘】微信微信 - 前端开发工程师</a></div>-->
+    </aside>
+    <aside id="recent-posts" class="widget widget-recent-posts">
+        <h3 class="widget-title">Recent Posts</h3>
+        <ul>
+            {% for post in site.posts limit:10 %}
+            <li><a href="{{site.url}}{{post.url}}" title="{{post.title}}">{{post.title}}</a></li>
+            {% endfor %}
+        </ul>
+    </aside>
+    <aside id="categories" class="widget widget-categories">
+        <h3 class="widget-title">Categories</h3>
+        <ul>
+            {% for category in site.categories %}
+            <li><a href="{{site.url}}/category/{{category | first}}">{{category | first}}({{category | last | size}})</a></li>
+            {% endfor %}
+        </ul>
+    </aside>
+    <aside id="tag-cloud" class="widget widget-tag-cloud">
+        <h3 class="widget-title">Tags</h3>
+        <div class="tag-cloud">
+            {% for tag in site.tags %}
+            <a href="{{site.url}}/tags?{{tag | first}}">{{tag | first}}</a>
+            {% endfor %}
+        </div>
+    </aside>
+</div>

@@ -1,0 +1,52 @@
+# Where things are
+paginate:     10
+
+# Handling Reading
+exclude: ["_posts/sample","category/sample"]
+
+# Filtering Content
+show_drafts:  null
+limit_posts:  0
+future:       true
+unpublished:  false
+
+#站点基础配置
+title: 阿Sam
+subTitle: 世界好简单，人类好负责
+description: 这是 阿Sam 的博客，它是基于 Jekyll 搭建起来的。在这里，不仅仅是用来快速记录工作，学习，生活的一点一滴的地方，更是 Sam 对 Jekyll 的学习和使用的一次有意义的实践。
+footerDescription: 世界好简单，人类好负责
+#url: http://samhwang1990.github.io
+
+#菜单配置
+nav:
+  - text: 首页
+    url: /index.html
+  - text: OIL
+    url: /oil.html
+  - text: Readme
+    url: /readme.html
+
+#作者信息
+author:
+  name: SamHwang
+  link: http://blog.ssyog.com/index.html
+
+# Outputting
+permalink: /blog/:categories/:title.html
+paginate_path: blog/page/:num
+
+# Template Default
+defaults:
+  -
+    scope:
+      path: "category"
+      type: "pages"
+    values:
+      layout: "category"
+
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
