@@ -1,5 +1,5 @@
 # Where things are
-paginate:     1
+paginate:     10
 
 # Filtering Content
 show_drafts:  null
@@ -31,3 +31,19 @@ author:
 # Outputting
 permalink: /blog/:categories/:title.html
 paginate_path: blog/page/:num
+
+# Template Default
+defaults:
+  -
+    scope:
+      path: "category"
+      type: "pages"
+    values:
+      layout: "category"
+
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"

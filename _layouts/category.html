@@ -1,10 +1,10 @@
 ---
 layout: default
-currentNav: Home
 ---
 
-<!-- Archives Show -->
-{% for post in paginator.posts %}
+{% include categoryHeader.html %}
+<!-- TODO: Category List Page Do Not Use Pagination Temporary -->
+{% for post in site.categories.[page.CATEGORY] %}
 <article>
     <header class="entry-header">
         <h1 class="entry-title"><a href="{{post.url}}">{{post.title}}</a></h1>
@@ -35,6 +35,3 @@ currentNav: Home
     </footer>
 </article>
 {% endfor %}
-
-<!-- Archives Page Nav -->
-{% include archivesPage.html %}

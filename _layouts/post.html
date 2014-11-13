@@ -1,9 +1,66 @@
 <!DOCTYPE html>
-<html>
+<!--[if IE 7]>
+<html class="ie ie7" lang="en-US">
+<![endif]-->
+<!--[if IE 8]>
+<html class="ie ie8" lang="en-US">
+<![endif]-->
+<!--[if !(IE 7) | !(IE 8)  ]><!-->
+<html lang="zh-CN">
 <head>
-    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>{% if page.title %}{{page.title}} | {% endif %}{{site.title}} | {{site.subTitle}}</title>
+    <!--[if lt IE 9]>
+    <script src="{{site.url}}/assert/bower_components/html5shiv/dist/html5shiv.js" type="text/javascript"></script>
+    <![endif]-->
+    <link href="{{site.url}}/css/style.css" rel="stylesheet" type="text/css" media="all">
 </head>
-<body>
-{{content}}
+<body class="custom-background article-body">
+<header class="article-site-header">
+    <h1 class="article-site-title">
+        <a href="{{site.url}}/">阿Sam 的Null</a>
+    </h1>
+</header>
+<article class="article-wrap">
+    <header class="article-header">
+        <h1 class="article-title">{{page.title}}</h1>
+        <!--ToDo:do not show reply-->
+        <!--<div class="comment-link"><a href="javascript:void(0)">23 Replies</a> </div>-->
+    </header>
+    <div class="article-content">
+        {{content}}
+    </div>
+    <footer class="article-meta">
+        This entry was posted in
+        <a href="{{site.url}}/category/{{page.category}}" title="View all posts in {{page.category}}" rel="category">{{page.category}}</a>
+        and tagged
+        {% for tag in page.tags %}
+        <a href="{{site.url}}/tags?{{tag}}" rel="tag" title="tag-{{tag}}">{{tag}}</a>
+        {% endfor %}
+        on
+        <time class="entry-date">{{ page.date | date_to_long_string }}</time>
+        <span class="by-author">
+            by {{site.author.name}}
+        </span>
+    </footer>
+</article>
+<nav id="nav-page" class="article-pagination" role="navigation">
+    {% if page.previous %}
+    <div class="article-previous">
+        <a href="{{page.previous.url}}">
+            ←&nbsp;{{ page.previous.title | truncatewords:5 }}
+        </a>
+    </div>
+    {% endif %}
+    {% if page.next %}
+    <div class="article-previous">
+        <a href="{{ page.next.url }}">
+            ←&nbsp;{{ page.next.title | truncatewords:5 }}
+        </a>
+    </div>
+    {% endif %}
+</nav>
+{% include footer.html %}
 </body>
 </html>
