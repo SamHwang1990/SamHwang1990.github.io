@@ -35,6 +35,7 @@ author:
 # Outputting
 permalink: /blog/:categories/:title.html
 paginate_path: blog/page/:num
+excerpt_separator: "<!--more-->"
 
 # Template Default
 defaults:

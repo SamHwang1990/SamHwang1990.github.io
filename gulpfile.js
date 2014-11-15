@@ -1,6 +1,7 @@
 // 引入 gulp
-var gulp = require('gulp'),
-path = require('path');
+var gulp = require('gulp');
+var minifyCSS = require('gulp-minify-css');
+var path = require('path');
 
 // 引入 Plugins
 var compass = require('gulp-compass');
@@ -15,7 +16,9 @@ gulp.task('compass', function() {
             css: 'Stylesheet/css',
             sass: 'Stylesheet/scss',
             image: 'Image'
-        }));
+        }))
+        .pipe(minifyCSS({keepBreaks:true,noAdvanced:true}))
+        .pipe(gulp.dest(path.join(__dirname, 'css')));;
 });
 
 // 默认任务

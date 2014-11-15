@@ -1,7 +1,6 @@
 ---
-layout: post
 title: 使用Jekyll 搭建Github 个人博客
-category: Jekyll
+category: jekyll
 tags: ['jekyll', 'github-pages']
 ---
 

@@ -344,17 +344,88 @@ a:hover{text-decoration:underline;color:#33B5E5;}
 .entry-content,.article-content{
   position: relative;
   line-height: 1.714285714;
+  font-size:14px;
+  font-size: .7rem;
 
   p{
     margin-bottom: 12px;
     margin-bottom: .6rem;
-    font-size:16px;
-    font-size: .8rem;
     line-height: 1.714285714;
 
     @media #{$media} and (min-width:$sm) {
       margin-bottom: 16px;
       margin-bottom: .8rem;
+    }
+  }
+
+  /* UL OL LI */
+  ul,ol{
+    margin-bottom: 8px;
+    margin-bottom: .4rem;
+    padding-left: 30px;
+    padding-left: 1.5rem;
+  }
+  ul{
+    list-style: disc;
+    ul{
+      list-style: circle;
+    }
+  }
+  ol{
+    list-style: decimal;
+  }
+
+  /*<pre> <code>*/
+  pre, code, tt {
+    font-size: 12px;
+    font-size: .6rem;
+    font-family: Consolas, "Liberation Mono", Courier, monospace;
+  }
+
+  code, tt {
+    margin: 0 0px;
+    padding: 0px 0px;
+    white-space: nowrap;
+    border: 1px solid #eaeaea;
+    background-color: #f8f8f8;
+    border-radius: 3px;
+  }
+
+  pre {
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+    font-size: 13px;
+    line-height: 19px;
+    overflow: auto;
+    padding: 6px 10px;
+    border-radius: 3px;
+
+    code {
+      margin: 0;
+      padding: 0;
+      white-space: pre;
+      border: none;
+      background: transparent;
+    }
+  }
+
+  pre code, pre tt {
+    background-color: transparent;
+    border: none;
+  }
+
+  /* QUOTES */
+  blockquote {
+    border-left: 4px solid #DDD;
+    padding: 0 15px;
+    color: #777;
+
+    &:first-child {
+      margin-top: 0px;
+    }
+
+    &:last-child {
+      margin-bottom: 0px;
     }
   }
 }
