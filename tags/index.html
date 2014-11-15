@@ -25,6 +25,11 @@ title: Tag Archives
         var archives = data[curTag];
 
         var posts = '';
+        if(archives.length <= 0){
+            posts = '当前分类没有文章唉，不知道为什么还存在～～～提个issue 给<a hfef="github.com/SamHwang1990/SamHwang1990.github.io/issues/new">阿Sam</a> 啦～～～';
+            $('#content').html(posts);
+            return;
+        }
         $.each(archives,function(index,post){
             posts +='<article>' +
                         '<header class="entry-header">' +

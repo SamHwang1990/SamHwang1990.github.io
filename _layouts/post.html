@@ -35,7 +35,7 @@
         <a href="{{site.url}}/category/{{page.category}}" title="View all posts in {{page.category}}" rel="category">{{page.category}}</a>
         and tagged
         {% for tag in page.tags %}
-        <a href="{{site.url}}/tags?{{tag}}" rel="tag" title="tag-{{tag}}">{{tag}}</a>
+        <a href="{{site.url}}/tags?{{tag}}" rel="tag" title="tag:{{tag}}">{{tag}}</a>
         {% endfor %}
         on
         <time class="entry-date">{{ page.date | date_to_long_string }}</time>
@@ -53,9 +53,9 @@
     </div>
     {% endif %}
     {% if page.next %}
-    <div class="article-previous">
+    <div class="article-next">
         <a href="{{ page.next.url }}">
-            ←&nbsp;{{ page.next.title | truncatewords:5 }}
+            {{ page.next.title | truncatewords:5 }}&nbsp;→
         </a>
     </div>
     {% endif %}
