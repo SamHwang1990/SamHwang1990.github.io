@@ -64,6 +64,8 @@ User & Organization Pages 是一个很特别的 Repository，特别在以下两�
 ##自定义GitHub Pages 域名
 GitHub Pages 允许自定义网站的域名，如果是你觉得 `username.github.io` 这个域名很2333。
 
+<!--more-->
+
 ###创建并提交 *CNAME* 文件
 为了重定向 Pages 网站到自定义的域名，需要在项目根目录下创建一个 *CNAME* 文件，文件中的内容是目标域名。具体步骤如下：
 
