@@ -29,6 +29,10 @@
     </header>
     <div class="article-content">
         {{content}}
+        <ul id="fn_article_nav">
+            <li><a href="#" id="fn_article_nav_toggle">展开导航</a> </li>
+            <li><a href="#top">返回顶部</a> </li>
+        </ul>
     </div>
     <footer class="article-meta">
         This entry was posted in
@@ -61,5 +65,7 @@
     {% endif %}
 </nav>
 {% include footer.html %}
+<script src="{{site.url}}/assert/bower_components/jquery/dist/jquery.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="{{site.url}}/js/articleNav.js"></script>
 </body>
 </html>

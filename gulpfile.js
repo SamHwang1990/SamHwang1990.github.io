@@ -7,7 +7,7 @@ var path = require('path');
 var compass = require('gulp-compass');
 
 // 创建 Compass 任务
-gulp.task('compass', function() {
+gulp.task('compassCSS', function() {
     gulp.src('./design/Stylesheet/scss/**')
         .pipe(compass({
             comments: false,
@@ -18,13 +18,21 @@ gulp.task('compass', function() {
             image: 'Image'
         }))
         .pipe(minifyCSS({keepBreaks:true,noAdvanced:true}))
-        .pipe(gulp.dest(path.join(__dirname, 'css')));;
+        .pipe(gulp.dest(path.join(__dirname, 'css')));
 });
 
+gulp.task('compassJS',function(){
+    gulp.src('./design/Javascript/**')
+        .pipe(gulp.dest(path.join(__dirname, 'js')));
+})
+
 // 默认任务
-gulp.task('default',['compass'],function() {
+gulp.task('default',['compassCSS','compassJS'],function() {
     gulp.watch([
         './design/Stylesheet/scss/**',
         './design/Image/**'
-    ],['compass']);
+    ],['compassCSS']);
+    gulp.watch([
+        './design/Javascript/**'
+    ],['compassJS']);
 });
