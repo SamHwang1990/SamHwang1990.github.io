@@ -6,25 +6,25 @@ $().ready(function(){
 
     $articleContent = $('.article-content').eq(0);
     $articleH2 = $articleContent.find('h2');
+    $articleContent = $('.article-content').eq(0);
+    $articleH2 = $articleContent.find('h2');
+    $articleNav = $('#fn_article_nav');
+    $fn_article_nav_toggle = $('#fn_article_nav_toggle');
+    fn_article_nav_toggle = false;
 
-    function init(){
-        $articleContent = $('.article-content').eq(0);
-        $articleH2 = $articleContent.find('h2');
-        $articleNav = $('#fn_article_nav');
-        $fn_article_nav_toggle = $('#fn_article_nav_toggle');
-        fn_article_nav_toggle = false;
-
-        //init article_nav list
+    function initArticleNavList(){
         var navListHtml = '';
         $articleH2.each(function(i){
             $(this).attr('id','article_nav_' + i);
             navListHtml =
                 '<li><a href="#' +$(this).attr('id') + '">' +
                     $(this).html();
-                '</a> </li>';
+            '</a> </li>';
             $articleNav.append(navListHtml);
         })
+    }
 
+    function init(){
         //init article_nav
         fn_article_nav_right = $(window).width() - ($articleContent.offset().left + $articleContent.outerWidth());
         fn_article_nav_top = $articleNav.offset().top ;
@@ -42,6 +42,7 @@ $().ready(function(){
 
     };
 
+    initArticleNavList();
     init();
 
     $(document).scroll(function(){
