@@ -34,7 +34,7 @@ Pages 的限制，其实要看你是怎么用它咯。姑娘只适合用来发�
 ##GitHub Pages 搭建教程 &bull; 全
 >如果下面的文字不是蓝蓝滴，那说明文章内容还只存在作者的小宇宙中！
 
-* GitHub Pages 简介
+* [GitHub Pages 简介]({{site.url}}/blog/jekyll/github-pages-intro.html "github-pages-intro")
 * Jekyll 简介
 * windows 下安装
 	+ 基于GitHub Pages 安装
