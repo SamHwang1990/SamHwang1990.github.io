@@ -347,6 +347,8 @@ a:hover {
 .entry-content img, .article-content img {
   border-radius: 3px;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  max-width: 100%;
+  height: auto;
 }
 .entry-content ul, .entry-content ol, .article-content ul, .article-content ol {
   margin-bottom: 8px;

@@ -361,6 +361,9 @@ a:hover{text-decoration:underline;color:#33B5E5;}
   img{
     border-radius: 3px;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+
+    max-width:100%;
+    height: auto;
   }
 
   /* UL OL LI */

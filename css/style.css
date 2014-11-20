@@ -115,7 +115,7 @@ a:hover{text-decoration:underline;color:#33B5E5}
 .entry-content p,.article-content p{margin-bottom:12px;margin-bottom:.6rem;line-height:1.714285714}
 @media screen and (min-width:600px){.entry-content p,.article-content p{margin-bottom:16px;margin-bottom:.8rem}
 }
-.entry-content img,.article-content img{border-radius:3px;box-shadow:0 1px 4px rgba(0,0,0,.2)}
+.entry-content img,.article-content img{border-radius:3px;box-shadow:0 1px 4px rgba(0,0,0,.2);max-width:100%;height:auto}
 .entry-content ul,.entry-content ol,.article-content ul,.article-content ol{margin-bottom:8px;margin-bottom:.4rem;padding-left:30px;padding-left:1.5rem}
 .entry-content ul,.article-content ul{list-style:disc}
 .entry-content ul ul,.article-content ul ul{list-style:circle}

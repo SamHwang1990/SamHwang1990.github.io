@@ -22,14 +22,10 @@ $().ready(function(){
             '</a> </li>';
             $articleNav.append(navListHtml);
         })
-    }
+    };
 
-    function init(){
-        //init article_nav
-        fn_article_nav_right = $(window).width() - ($articleContent.offset().left + $articleContent.outerWidth());
-        fn_article_nav_top = $articleNav.offset().top ;
-
-        $fn_article_nav_toggle.bind('click',function(){
+    function initArticleNavToggle(){
+        $fn_article_nav_toggle.bind('click',function(e){
             if(fn_article_nav_toggle){
                 $articleNav.removeClass('fn_article_nav_toggle');
                 fn_article_nav_toggle = false;
@@ -37,23 +33,34 @@ $().ready(function(){
                 $articleNav.addClass('fn_article_nav_toggle');
                 fn_article_nav_toggle = true;
             }
-            return false;
         });
-
+        return false;
     };
 
-    initArticleNavList();
-    init();
+    function initArticleOffset(){
+        //init article_nav
+        fn_article_nav_right = $(window).width() - ($articleContent.offset().left + $articleContent.outerWidth());
+        fn_article_nav_top = $articleNav.offset().top ;
+    };
 
-    $(document).scroll(function(){
-        if($(this).scrollTop() > fn_article_nav_top){
+    function setArticleNavOffset(){
+        if($(document).scrollTop() > fn_article_nav_top){
             $articleNav.css({'position':'fixed', 'right':fn_article_nav_right, 'top':'10px'})
         }else{
             $articleNav.css({'position':'absolute', 'right':0, 'top':'10px'})
         }
+    };
+
+    initArticleNavList();
+    initArticleNavToggle();
+    initArticleOffset();
+
+    $(document).scroll(function(){
+        setArticleNavOffset();
     })
     $(window).resize(function(){
-        init();
+        initArticleOffset();
+        setArticleNavOffset();
     })
 
 });
