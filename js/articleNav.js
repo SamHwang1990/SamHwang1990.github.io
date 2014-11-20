@@ -38,7 +38,6 @@ $().ready(function(){
     };
 
     function initArticleOffset(){
-        //init article_nav
         fn_article_nav_right = $(window).width() - ($articleContent.offset().left + $articleContent.outerWidth());
         fn_article_nav_top = $articleNav.offset().top ;
     };
