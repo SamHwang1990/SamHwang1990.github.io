@@ -39,7 +39,7 @@ $().ready(function(){
 
     function initArticleOffset(){
         fn_article_nav_right = $(window).width() - ($articleContent.offset().left + $articleContent.outerWidth());
-        fn_article_nav_top = $articleNav.offset().top ;
+        fn_article_nav_top = $articleContent.offset().top + 10 ;
     };
 
     function setArticleNavOffset(){
@@ -59,7 +59,6 @@ $().ready(function(){
     })
     $(window).resize(function(){
         initArticleOffset();
-        setArticleNavOffset();
     })
 
 });
