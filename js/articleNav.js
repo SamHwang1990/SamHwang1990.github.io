@@ -33,8 +33,8 @@ $().ready(function(){
                 $articleNav.addClass('fn_article_nav_toggle');
                 fn_article_nav_toggle = true;
             }
+            return false;
         });
-        return false;
     };
 
     function initArticleOffset(){
