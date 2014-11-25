@@ -40,7 +40,7 @@ Jekyll 提供模板、变量、插件等功能，基本能满足一个博客网�
 
 当然，如果还有某些你需要的功能不能通过Jekyll 已有的API 或者 JS 来实现的话，可能需要自己写Plugin 或者 调用现成的Plugin。
 
-> 这里要提醒，GitHub Pages 由于安全原因，Pages 的编译器不允许网站调用Plugin，但如果你非要调用Plugin，可以自己本地调用好，然后本地编译好所有资源，还记得吗，这些资源会放置在 `_site` 目录下。编译好后，把 `_site` 目录push 到 [Pages 的项目](http://blog.ssyog.com/ "{{site.title}} | {{site.subTitle}}") 中，此时Pages 的编译器会检查 `_site` 下的内容，如果不为空，则不会使用自身的编译器去编译，而会直接把 `_site` 目录的内容发布到网站上。
+> 这里要提醒，GitHub Pages 由于安全原因，Pages 的编译器不允许网站调用Plugin，但如果你非要调用Plugin，可以自己本地调用好，然后本地编译好所有资源，还记得吗，这些资源会放置在 `_site` 目录下。编译好后，把 `_site` 目录push 到 [Pages 网站](http://blog.ssyog.com/) 中，此时Pages 的编译器会检查 `_site` 下的内容，如果不为空，则不会使用自身的编译器去编译，而会直接把 `_site` 目录的内容发布到网站上。
 
 ## 全文 &bull; 终
 看完上文，对Jekyll 的细节如果还有很强兴趣，可以等我更新[系列教程]({{site.url}}/blog/jekyll/build-github-pages-by-jekyll.html "使用Jekyll 搭建Github 个人博客 系列教程")，或者直接看Jekyll 的[官方文档](http://jekyllrb.com/ "Jekyll 官方文档")（[中文版](http://jekyllcn.com/ "Jekyll 官方文档中文版")）
