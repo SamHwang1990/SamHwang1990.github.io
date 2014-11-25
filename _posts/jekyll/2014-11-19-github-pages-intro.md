@@ -5,8 +5,6 @@ category: Jekyll
 tags: ['jekyll', 'github-pages']
 ---
 
-#GitHub Pages 简介
-
 整体来说，这里的简介是翻译 [GitHub Pages](https://help.github.com/categories/github-pages-basics/ "github-pages") 的官网说明。
 
 ##GitHub Pages 是什么
