@@ -24,8 +24,9 @@ $().ready(function(){
         })
     };
 
+    //bind fn_article_nav_toggle
     function initArticleNavToggle(){
-        $fn_article_nav_toggle.bind('click',function(e){
+        $fn_article_nav_toggle.bind('click',function(){
             if(fn_article_nav_toggle){
                 $articleNav.removeClass('fn_article_nav_toggle');
                 fn_article_nav_toggle = false;
@@ -38,8 +39,9 @@ $().ready(function(){
     };
 
     function initArticleOffset(){
+        //init article_nav
         fn_article_nav_right = $(window).width() - ($articleContent.offset().left + $articleContent.outerWidth());
-        fn_article_nav_top = $articleContent.offset().top + 10 ;
+        fn_article_nav_top = $articleNav.offset().top ;
     };
 
     function setArticleNavOffset(){
@@ -59,6 +61,7 @@ $().ready(function(){
     })
     $(window).resize(function(){
         initArticleOffset();
+        setArticleNavOffset();
     })
 
 });
