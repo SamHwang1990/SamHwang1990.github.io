@@ -16,7 +16,7 @@ subTitle: 世界好简单，人类好复杂
 description: 这是 阿Sam 的博客，它是基于 Jekyll 搭建起来的。在这里，不仅仅是用来快速记录工作，学习，生活的一点一滴的地方，更是 Sam 对 Jekyll 的学习和使用的一次有意义的实践。
 keywords: Jekyll,Daily
 footerDescription: 世界好简单，人类好复杂<br/>I Love Young Wong forever~~~
-#url: http://samhwang1990.github.io
+RepositoryUrl: https://github.com/SamHwang1990/SamHwang1990.github.io
 
 #菜单配置
 nav:
