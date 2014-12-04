@@ -31,7 +31,7 @@ oh-my-zsh 的安装依赖于以下两个软件：`git`、`zsh`。
 这里的`~/.zshrc` 文件是 `zsh shell` 的原始配置文件。
 
 ###1.3. 使用 oh-my-zsh 的配置文件
-通过复制 `oh-my-zsh` 的配置文件模板，来 创建新的`Zsh` 配置文件：
+通过复制 `oh-my-zsh` 的配置文件模板，来创建新的`Zsh` 配置文件：
 
 `cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc`
 
@@ -39,6 +39,7 @@ oh-my-zsh 的安装依赖于以下两个软件：`git`、`zsh`。
 `chsh -s /bin/zsh`
 
 > 秘密告诉你吧。chsh -s其实修改的就是/etc/passwd文件里和你的用户名相对应的那一行。现在我来查看下：
+>
 > From: [《用chsh选择shell》](http://roclinux.cn/?p=739 "《用chsh选择shell》")
 
 ###1.5. 重启系统，完成配置
