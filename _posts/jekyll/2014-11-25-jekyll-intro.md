@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Jekyll 简介
-category: Jekyll
+category: jekyll
 tags: ['jekyll']
 ---
 
