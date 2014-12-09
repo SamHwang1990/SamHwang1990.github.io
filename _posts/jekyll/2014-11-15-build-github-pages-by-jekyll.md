@@ -36,9 +36,10 @@ Pages 的限制，其实要看你是怎么用它咯。姑娘只适合用来发�
 
 * [GitHub Pages 简介]({{site.url}}/blog/jekyll/github-pages-intro.html "github-pages-intro")
 * [Jekyll 简介]({{site.url}}/blog/jekyll/jekyll-intro.html "jekyll-intro")
-* windows 下安装
+* Jekyll 安装
 	+ 基于GitHub Pages 安装
 	+ 独立安装 Jekyll
+	+ Windows 下的配置
 	+ 运行Jekyll
 * Jekyll 快速入门
 	+ 使用Jekyll 的站点
