@@ -36,7 +36,7 @@ Pages 的限制，其实要看你是怎么用它咯。姑娘只适合用来发�
 
 * [GitHub Pages 简介]({{site.url}}/blog/jekyll/github-pages-intro.html "github-pages-intro")
 * [Jekyll 简介]({{site.url}}/blog/jekyll/jekyll-intro.html "jekyll-intro")
-* Jekyll 安装
+* [Jekyll 安装]({{site.url}}/blog/jekyll/install-jekyll-intro.html "install-jekyll-intro")
 	+ 基于GitHub Pages 安装
 	+ 独立安装 Jekyll
 	+ Windows 下的配置
