@@ -40,7 +40,7 @@ Pages 的限制，其实要看你是怎么用它咯。姑娘只适合用来发�
 	+ [基于GitHub Pages 安装]({{site.url}}/blog/jekyll/install-jekyll-based-on-github-pages.html "install-jekyll-base-on-github-pages")
 	+ [独立安装 Jekyll]({{site.url}}/blog/jekyll/install-jekyll-stand-alone.html 'install-jekyll-stand-alone')
 	+ [Windows 下的配置]({{site.url}}/blog/jekyll/install-jekyll-on-window.html 'install-jekyll-on-window')
-	+ 运行Jekyll
+	+ [运行Jekyll]({{site.url}}/blog/jekyll/run-jekyll.html 'run-jekyll')
 * Jekyll 快速入门
 	+ 使用Jekyll 的站点
 	+ Jekyll 的目录结构
