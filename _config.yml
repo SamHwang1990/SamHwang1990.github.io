@@ -36,6 +36,7 @@ author:
 permalink: /blog/:categories/:title.html
 paginate_path: blog/page/:num
 excerpt_separator: "<!--more-->"
+highlighter: pygments
 
 # Template Default
 defaults:
