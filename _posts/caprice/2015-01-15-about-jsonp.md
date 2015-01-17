@@ -19,8 +19,10 @@ jsonp 仅适用于HttpGet 请求方法；
 
 	callback({"name":"Foo", "lastname:"Bar"})
 
+
 前端的代码接收到服务端的相应后，会对返回的字符串做一些解析，解析结果就是一段调用给定回调函数的代码：
 
 	callback({"name":"Foo", "lastname:"Bar"})
+
 
 全文终！
