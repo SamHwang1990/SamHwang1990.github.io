@@ -64,8 +64,8 @@ a:hover{text-decoration:underline;color:#33B5E5}
 @media screen and (min-width:600px){.site-header h1{font-size:26px;font-size:1.3rem;float:left;text-align:left;margin-bottom:0}
 }
 .main-navigation{margin-top:24px;margin-top:1.2rem;text-align:center}
-.main-navigation ul.nav-menu{display:none}
-.main-navigation ul.nav-menu.toggle-on{display:inline-block}
+.main-navigation ul.nav-menu{display:none;margin:0}
+.main-navigation ul.nav-menu.toggle-on{display:inline-block;padding-left:0}
 .main-navigation li{margin-top:24px;margin-top:1.2rem;font-size:12px;font-size:.6rem;line-height:1.48}
 .main-navigation li.current-page-item a{color:#1982d1;border-bottom:4px solid #33B5E5;margin-bottom:-4px}
 .main-navigation li a{color:#757575}

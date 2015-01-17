@@ -5,6 +5,7 @@ category: jekyll
 tags: ['jekyll']
 ---
 
+
 运行Jekyll，一般都在cmd 或者terminal 中撸，如果有能通过其他方式（比如桌面快捷方式之类的）整的大神，自己慢慢撸吧，2333~~~
 
 然后呢，要介绍下jekyll 中两个超级常用的命令，都是用来撸起jekyll 的：`jekyll build` 和 `jekyll serve`。（都是转[中文官网介绍](http://jekyllcn.com/docs/usage/)的会乱说吗~~~）
@@ -22,7 +23,7 @@ tags: ['jekyll']
 
 	$ jekyll build --watch
 	# => 当前文件夹中的内容将会生成到 ./_site 文件夹中，
-	#    查看改变，并且自动再生成。
+	#   查看改变，并且自动再生成。
 
 
 ## jekyll serve
@@ -37,3 +38,6 @@ tags: ['jekyll']
 	
 	$ jekyll serve --watch
 	# => 和`jekyll serve`相同，但是会查看变更并且自动再生成。
+
+
+全文终！

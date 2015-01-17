@@ -20,11 +20,15 @@ GitHub Pages 需要Ruby 的版本至少是 `1.9.3` 或者 `2.0.0`。如果你已
 ### 0.2. 安装Jekyll
 使用Ruby 的gem 来安装Jekyll，gem 可以理解为库管理器，相当于nodejs 中的npm，一般安装Ruby 的时候已经把gem 给安装好了。在终端运行以下命令即可完成Jekyll 的安装：
 
-`gem install jekyll` 
+	gem install jekyll 
 
-> 如果嫌安装jekyll 的速度有点慢，可以运行以下命令，更改gem 的安装源改成淘宝的资源：`gem sources -a http://ruby.taobao.org/`。把这次安装的源改为淘宝的源，那速度杠杠滴。
+如果嫌安装jekyll 的速度有点慢，可以运行以下命令，更改gem 的安装源改成淘宝的资源：
 
-> 最后，更详细介绍更改Ruby gem 源的文章见下面的链接：[修改ruby gem源为ruby.taobao.org](http://www.cnblogs.com/andycnzh/p/3627824.html)。
+	gem sources -a http://ruby.taobao.org/
+
+把这次安装的源改为淘宝的源，那速度杠杠滴。
+
+最后，更详细介绍更改Ruby gem 源的文章见下面的链接：[修改ruby gem源为ruby.taobao.org](http://www.cnblogs.com/andycnzh/p/3627824.html)。
 
 ##1. 运行Jekyll
 运行Jekyll，在网站的根目录下运行以下命令：

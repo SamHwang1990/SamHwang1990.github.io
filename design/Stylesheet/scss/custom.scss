@@ -97,9 +97,11 @@ a:hover{text-decoration:underline;color:#33B5E5;}
 
   ul.nav-menu{
     display: none;
+	margin: 0;
 
     &.toggle-on{
       display: inline-block;
+	  padding-left: 0;
     }
   }
 

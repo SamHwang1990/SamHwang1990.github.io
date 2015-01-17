@@ -28,11 +28,11 @@ tags: ['jekyll', 'github-pages']
 ## 安装wdm
 解决方法很简单，就是安装 `wdm` 这个ruby 的库，命令如下：
 
-`gem install wdm`
+	gem install wdm
 
 另外，也可以用 `bundle` 一步安装哈，把下面的语句添加到根目录的 `Gemfile` 文件中，记得要以独立的一行来添加哦：
 
-`gem 'wdm', '~> 0.1.0' if Gem.win_platform?`
+	gem 'wdm', '~> 0.1.0' if Gem.win_platform?
 
 然后运行 `bundle install` 命令来安装！
 
