@@ -5,7 +5,6 @@ category: jekyll
 tags: ['jekyll']
 ---
 
-
 运行Jekyll，一般都在cmd 或者terminal 中撸，如果有能通过其他方式（比如桌面快捷方式之类的）整的大神，自己慢慢撸吧，2333~~~
 
 然后呢，要介绍下jekyll 中两个超级常用的命令，都是用来撸起jekyll 的：`jekyll build` 和 `jekyll serve`。（都是转[中文官网介绍](http://jekyllcn.com/docs/usage/)的会乱说吗~~~）
