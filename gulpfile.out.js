@@ -11,11 +11,7 @@ gulp.task('compassCSS', function() {
     gulp.src('./design/Stylesheet/scss/**')
         .pipe(compass({
             comments: false,
-            config_file: '../design/config.rb',
-            project: path.join(__dirname, 'design'),
-            css: 'Stylesheet/css',
-            sass: 'Stylesheet/scss',
-            image: 'Image'
+            config_file: path.join(__dirname, 'design/config.rb')
         }))
         .pipe(minifyCSS({keepBreaks:true,noAdvanced:true}))
         .pipe(gulp.dest(path.join(__dirname, 'css')));

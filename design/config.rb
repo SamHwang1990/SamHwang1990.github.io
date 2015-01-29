@@ -1,4 +1,4 @@
-project_dir = './'
+project_dir = '.'
 preferred_syntax = :scss
 css_path = 'Stylesheet/css'
 sass_path = 'Stylesheet/scss'
