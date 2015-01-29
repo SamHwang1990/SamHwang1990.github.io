@@ -1,7 +1,7 @@
 ---
 title: 阿Sam 的gulp 使用经验
 category: webbuild
-tags: ['gulp']
+tags: ['gulp', 'web-build']
 ---
 
 ## 基本用法
@@ -22,7 +22,7 @@ tags: ['gulp']
 	
 下面以一段代码来演示如何把这四个接口用上，这段代码的目的是将项目根目录下的文件“foo.js”和“bar.js”合并，然后压缩代码，最后保存在“gulpTest”目录下的“helloworld.js”中：
 
-	// gulpfile.out.js
+	// gulpfile.js
 	
 	var gulp = require('gulp');
 	var concat = require('gulp-concat');
@@ -42,7 +42,7 @@ tags: ['gulp']
 下面先把步骤给列出来：
 
 1. 全局安装gulp ：`[sudo] npm install -g gulp`
-2. 将以上代码保存到项目根目录中，文件名为：“gulpfile.out.js”，这个可不能随便自定义哦；
+2. 将以上代码保存到项目根目录中，文件名为：“gulpfile.js”，这个可不能随便自定义哦；
 3. 安装gulpfile 中提到的所有库：`[sudo] npm install gulp gulp-concat gulp-uglify --save-dev`
 4. 打开终端，切换到项目根目录，执行命令：`gulp gulpDemo`
 5. where amazing happen～～～
@@ -51,16 +51,16 @@ tags: ['gulp']
 
 第一步中，要将 gulp 安装到全局中，目的是在node 目录下的bin/ 目录中添加gulp 命令的可执行文件，而又由于bin/ 目录在node 安装的过程中被加到了$PATH 环境变量中，所以，我们可以在任意目录下运行gulp 命令了。
 
-第二步中，gulp 的所有代码都要保存到 `gulpfile.out.js` 文件中，文件名可是固定的了，别乱发挥想像力。
+第二步中，gulp 的所有代码都要保存到 `gulpfile.js` 文件中，文件名可是固定的了，别乱发挥想像力。
 
 第三步中，这里为什么还要再安装gulp 一遍呢？原因就是，这里安装的gulp 是被放到项目根目录中 `.node_modules/`，鉴于node 查找库的方式，这能加快执行代码时更快找到gulp 这个库。另外，这一步的命令最后有一个参数：`--save-dev`，目的是将这段命令安装的库的名称加到 'package.json' 的 `dev-dependencies` 中。
 
-第四步中，这里要说明一下的是，执行gulp 命令的地方其实可以在任何地方，但正确的姿势时，切换到保存 `gulpfile.out.js` 文件的目录中，然后gulp，就可以执行你精心编写的gulp 任务了。
+第四步中，这里要说明一下的是，执行gulp 命令的地方其实可以在任何地方，但正确的姿势时，切换到保存 `gulpfile.js` 文件的目录中，然后gulp，就可以执行你精心编写的gulp 任务了。
 
 <!--more-->
 
 ### 代码解释
-在上面的 gulpfile.out.js 的代码中，我们先声明引用了三个库：“gulp”、“gulp-concat”、“gulp-uglify”，第二个用来连接多个文件之用，第三个用来压缩文件之用。
+在上面的 gulpfile.js 的代码中，我们先声明引用了三个库：“gulp”、“gulp-concat”、“gulp-uglify”，第二个用来连接多个文件之用，第三个用来压缩文件之用。
 
 然后，使用 `gulp.task()` 声明了一个任务，这个任务名为“gulpDemo”，留意下这里的任务名，回看下执行gulp 的命令：`gulp gulpDemo`，看到了吗，在gulp 后加上任务名，就能调用在 gulpfile 中定义的同名任务了。给 `.task()` 第二个参数传入一个函数，函数里面就是用来定义这个任务要干什么的。
 
