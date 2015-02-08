@@ -41,10 +41,19 @@ tags: ['gulp', 'web-build']
 ### 执行gulp 任务
 下面先把步骤给列出来：
 
-1. 全局安装gulp ：`[sudo] npm install -g gulp`
+1. 全局安装gulp ：
+
+		[sudo] npm install -g gulp
+
 2. 将以上代码保存到项目根目录中，文件名为：“gulpfile.js”，这个可不能随便自定义哦；
-3. 安装gulpfile 中提到的所有库：`[sudo] npm install gulp gulp-concat gulp-uglify --save-dev`
-4. 打开终端，切换到项目根目录，执行命令：`gulp gulpDemo`
+3. 安装gulpfile 中提到的所有库：
+
+		[sudo] npm install gulp gulp-concat gulp-uglify --save-dev`
+	
+4. 打开终端，切换到项目根目录，执行命令：
+
+		gulp gulpDemo
+
 5. where amazing happen～～～
 
 在这四个步骤中，有几个点需要PS 以下。
