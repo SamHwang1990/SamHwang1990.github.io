@@ -4,7 +4,7 @@ category: webbuild
 tags: ['PassportJS', 'Session']
 ---
 
-想快速知道为什么使用PassportJS 时`req.user` 或者 `req.session.passport.user` 会未定义，请点击这里：[问题出在哪里](#article_nav_1)
+想快速知道为什么使用PassportJS 时`req.user` 或者 `req.session.passport.user` 会未定义，请点击这里：[问题出在哪里]({{page.url}}#article_nav_1)
 
 ## PassportJS 的配置
 配合Session 来使用PassportJS 时，一般的配置都会有以下几部分：
