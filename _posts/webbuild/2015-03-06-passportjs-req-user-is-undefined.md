@@ -13,12 +13,12 @@ tags: ['PassportJS', 'Session']
 	var app = new require('express')();
 	app.use(require('cookie-parser')('i_am_cookie_secret'));
 	app.use(session({
-		secret:'i_am_session_secret',
-		name:'sid',
-		store:new redisStore({
-			host: config.database.redis.host,
-			port: config.database.redis.port
-		}),
+	  secret:'i_am_session_secret',
+	  name:'sid',
+	  store:new redisStore({
+	    host: config.database.redis.host,
+	    port: config.database.redis.port
+	  }),
 	}));
 	
 上面的代码将session 存到Redis 这个NoSql 数据库中了。
