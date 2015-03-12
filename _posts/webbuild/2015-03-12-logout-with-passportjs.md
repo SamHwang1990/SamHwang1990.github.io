@@ -18,7 +18,7 @@ tags: ['PassportJS', 'Session']
 	req.session.passport.user
 	res.cookie
 	
-所以，要想完成Logout 功能，只要要把以上的数据都清楚掉吧，当然，并不是直接用`delete` 就完事的，而是按下面的步骤来大扫除：
+所以，要想完成Logout 功能，只需把以上的数据都清楚掉。当然，并不是直接用`delete` 就完事的，而是按下面的步骤来大扫除：
 
 ## 1. req.logout()
 调用passportjs 附加到req 对象上的`logout()` 方法，把`req.user`、`req.session.passport`、`req.session.passport.user` 都删掉。
@@ -29,13 +29,13 @@ tags: ['PassportJS', 'Session']
 ## 3. res.clearCookie()
 调用`res.clearCookie()` 方法，把`res.cookie` 删掉。
 
-<!--more-->
+## 4. 完！
 最后，把全部代码贴出来，好来个整体把握：
 
 	exports.logout = function(req, res, next){
-  	  req.logout();		// to remove the influence of passportjs
-  	  req.session.destroy();	//to remove session relative data
-  	  res.clearCookie(config.session_name, { path: '/' });	// to remove res.cookie
+  	  req.logout();	    // to remove the influence of passportjs
+  	  req.session.destroy();    //to remove session relative data
+  	  res.clearCookie(config.session_name, { path: '/' });    // to remove res.cookie
   	  res.status(200).json({
     	message:'UserLogOutSuccess'
   	  });
