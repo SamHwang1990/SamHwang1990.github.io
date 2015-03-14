@@ -47,7 +47,7 @@ tags: ['PassportJS', 'Session']
         return done(null, false, {message: "UserEmailUnknown"});
       }
       if(passport !== user.userPass){
-      	return done(null, false, {message: 'UserPasswordWrong'});
+        return done(null, false, {message: 'UserPasswordWrong'});
       }
       return done(null, user, {message: 'UserAuthenticateSuccess'});
     }));
@@ -83,23 +83,22 @@ PassportJS 就是通过以上的代码来做用户信息认证的，如果认证
 所以，我们会在Login［HttpPost］的逻辑处调用`authenticate` 方法，此时会执行第三步所写的PassportJS 验证代码，看代码：
 
 	var loginFunc = function(req, res, next){
-  	  passport.authenticate('local', function(err, user, info) {
-   	    if(err){
-      	  return next(err);
+	  passport.authenticate('local', function(err, user, info) {
+        if(err){
+          return next(err);
         }
         if(!user){
           res.status(401).json(info);
           res.end();
           return;
         }
-       
       })(req, res, next);
 	};
 	app.post('/login', loginFunc);
 	
 上面的验证中间件（loginFunc）使用了自定义回调函数来做验证结果的处理。
 
-## 问题处在哪里？
+## 问题出在哪里？
 好了，回到文章标题中提及到的，按上面的步骤配置完后，为什么在session 中找不到user 属性，也不能在`session.passport` 中找到user 属性呢？真相只有一个，那就是：
 
 **如果我们在上面第五步中使用自定义的回调函数来处理验证结果的话，则需要手动调用PassportJS 的login() 方法，来让PassportJS 处理相关的session 数据。**
